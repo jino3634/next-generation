@@ -1,0 +1,9 @@
+오후 9:36 2018-03-31
+register_globals On처리하고
+session.auto_start 0에서 1로 바꿈
+
+
+
+
+
+아파치 서버 껐다 켜야 변경사항이 적용됨.

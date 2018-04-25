@@ -1,0 +1,59 @@
+180405 21:06:23 [Note] Plugin 'FEDERATED' is disabled.
+InnoDB: The first specified data file .\ibdata1 did not exist:
+InnoDB: a new database to be created!
+180405 21:06:23  InnoDB: Setting file .\ibdata1 size to 10 MB
+InnoDB: Database physically writes the file full: wait...
+180405 21:06:23  InnoDB: Log file .\ib_logfile0 did not exist: new to be created
+InnoDB: Setting log file .\ib_logfile0 size to 5 MB
+InnoDB: Database physically writes the file full: wait...
+180405 21:06:23  InnoDB: Log file .\ib_logfile1 did not exist: new to be created
+InnoDB: Setting log file .\ib_logfile1 size to 5 MB
+InnoDB: Database physically writes the file full: wait...
+InnoDB: Doublewrite buffer not found: creating new
+InnoDB: Doublewrite buffer created
+InnoDB: Creating foreign key constraint system tables
+InnoDB: Foreign key constraint system tables created
+180405 21:06:23  InnoDB: Started; log sequence number 0 0
+180405 21:06:23 [Note] Event Scheduler: Loaded 0 events
+180405 21:06:23 [Note] APM_MYSQL5: ready for connections.
+Version: '5.1.41-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+180414 19:18:57 [Note] APM_MYSQL5: Normal shutdown
+
+180414 19:18:57 [Note] Event Scheduler: Purging the queue. 0 events
+180414 19:18:59 [Warning] APM_MYSQL5: Forcing close of thread 310  user: 'root'
+
+180414 19:18:59  InnoDB: Starting shutdown...
+180414 19:19:00  InnoDB: Shutdown completed; log sequence number 0 44233
+180414 19:19:00 [Note] APM_MYSQL5: Shutdown complete
+
+180414 19:19:04 [Note] Plugin 'FEDERATED' is disabled.
+180414 19:19:04  InnoDB: Started; log sequence number 0 44233
+180414 19:19:04 [Note] Event Scheduler: Loaded 0 events
+180414 19:19:04 [Note] APM_MYSQL5: ready for connections.
+Version: '5.1.41-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+180414 20:13:00 [Note] APM_MYSQL5: Normal shutdown
+
+180414 20:13:00 [Note] Event Scheduler: Purging the queue. 0 events
+180414 20:13:02 [Warning] APM_MYSQL5: Forcing close of thread 69  user: 'root'
+
+180414 20:13:02  InnoDB: Starting shutdown...
+180414 20:13:03  InnoDB: Shutdown completed; log sequence number 0 44233
+180414 20:13:03 [Note] APM_MYSQL5: Shutdown complete
+
+180414 20:13:05 [Note] Plugin 'FEDERATED' is disabled.
+180414 20:13:05  InnoDB: Started; log sequence number 0 44233
+180414 20:13:05 [Note] Event Scheduler: Loaded 0 events
+180414 20:13:05 [Note] APM_MYSQL5: ready for connections.
+Version: '5.1.41-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
+180425 15:03:25 [Note] APM_MYSQL5: Normal shutdown
+
+180425 15:03:25 [Note] Event Scheduler: Purging the queue. 0 events
+180425 15:03:25  InnoDB: Starting shutdown...
+180425 15:03:26  InnoDB: Shutdown completed; log sequence number 0 44233
+180425 15:03:26 [Note] APM_MYSQL5: Shutdown complete
+
+180425 15:04:05 [Note] Plugin 'FEDERATED' is disabled.
+180425 15:04:06  InnoDB: Started; log sequence number 0 44233
+180425 15:04:06 [Note] Event Scheduler: Loaded 0 events
+180425 15:04:06 [Note] APM_MYSQL5: ready for connections.
+Version: '5.1.41-community'  socket: ''  port: 3306  MySQL Community Server (GPL)
