@@ -27,7 +27,13 @@
   for ($i=$start; $i<$start+$scale && $i < $total_record; $i++)
   {
      mysql_data_seek($result, $i);     // 포인터 이동
-		 $row = mysql_fetch_array($result); // 하나의 레코드 가져오기
+     $row = mysql_fetch_array($result); // 하나의 레코드 가져오기
+
+   $item_num     = $row[num];
+   $item_id      = $row[id];
+   $item_name    = $row[name];
+	 $item_nick    = $row[nick];
+   $item_hit     = $row[hit];
 	 $item_date    = $row[regist_day];
    $item_date = substr($item_date, 0, 10);
    $item_subject = str_replace(" ", "&nbsp;", $row[subject]);
@@ -35,14 +41,17 @@
    $number--;
 
    $page = array(//게시물 정보
-   'num'=>$row[num],//글 번호
-   'writer'=>$row[nick],//등록자
-   'hit'=>$row[hit],//조회수
-	 'subject'=>$item_subject//제목
+   'num'=>$row[num],
+   'id'=>$row[id],
+   'name'=>$row[name],
+   'writer'=>$row[nick],
+   'hit'=>$row[hit],
+   'date'=>$item_date,
+	 'subject'=>$item_subject
 );
 
 
-echo json_encode($page);//
+echo json_encode($page);//로그인 정보를 출력
 
    }
 
