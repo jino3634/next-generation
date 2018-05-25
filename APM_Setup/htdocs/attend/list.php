@@ -62,7 +62,7 @@
 
 	<div id="col2">
 		<div id="title">
-			<img src="../img/title_free.gif">
+			<img src="../img/title_attend.gif">
 		</div>
 
 		<form  name="board_form" method="post" action="list.php?table=<?=$table?>&mode=search">

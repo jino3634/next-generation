@@ -2,7 +2,7 @@
 	session_start();
 	include "../lib/dbconn.php";
 
-	$sql = "select * from $table where num=$num";
+	$sql = "select * from $_GET[table] where num=$_GET[num]";
 	$result = mysql_query($sql, $connect);
     $row = mysql_fetch_array($result);
 
@@ -119,7 +119,37 @@
 ?>
 			<?= $item_content ?>
 		</div>
+<?//----------------------------------------------------------------------------------참석 버튼?>
+		<div style = "padding: 5px 0px 5px 0px;">
 
+	<?
+
+		if($_SESSION[userid])
+		{
+			$sql = "select * from redy where student_st_num = '$_SESSION[usernick]' and free_num = $num;";
+			//'$usernick' and free_num = $number;";
+			$result = mysql_query($sql, $connect);
+			$exist_id = mysql_num_rows($result);//행이 있는지 확인
+
+			if($exist_id) {//참석한 경우
+				  $row = mysql_fetch_array($result);
+			?>
+				<a href="../lib/ask_del.php?del_num=<?=$row[redy_num]?>&num=<?=$num?>&table=<?$table?>&page=<?=$page?>">	<img src="../img/attended.png"></a>&nbsp;</a>
+				<?//보안?
+			}
+			else// 참석 안되어있는 경우
+			{            // 레코드 삽입 명령을 $sql에 입력
+	?>
+				 <a href="../lib/ask.php?num=<?=$num?>&table=<?$table?>&page=<?=$page?>">	<img src="../img/attend.png"></a>&nbsp;</a>
+	<?
+			}
+	?>
+
+	<?
+	}
+	 ?>
+			</div>
+			<?//----------------------------------------------------------------------------------참석 버튼?>
 		<div id="ripple">
 <?
 	    $sql = "select * from free_ripple where parent='$item_num'";

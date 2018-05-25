@@ -16,7 +16,7 @@
    echo "
 	   <script>
      window.alert('참석 신청 완료')
-     location.href = '/free/view.php?table=free&num=$num&page=$page';
+     location.href = '/free/view.php?table=free&num=$_GET[num]&page=$_GET[page]';
 	   </script>
 	";
 ?>

@@ -109,7 +109,7 @@
 		</div>
 
 		<div id="view_content">
-<?
+<?echo "123";
 //--------------------------------------------------------------------------------------------------------------------------------------------------
 	for ($i=0; $i<3; $i++)
 	{
@@ -125,13 +125,13 @@
 ?>
 			<?= $item_content ?>
 		</div>
-
 	<div style = "padding: 5px 0px 5px 0px;">
 <?//----------------------------------------------------------------------------------참석 버튼?>
 <?
-	if($userid)
+
+	if($_SESSION[userid])
 	{
-		$sql = "select * from redy where student_st_num = '$usernick' and free_num = $num;";
+		$sql = "select * from redy where student_st_num = '$_SESSION[usernick]' and free_num = $num;";
 		//'$usernick' and free_num = $number;";
 		$result = mysql_query($sql, $connect);
 		$exist_id = mysql_num_rows($result);//행이 있는지 확인

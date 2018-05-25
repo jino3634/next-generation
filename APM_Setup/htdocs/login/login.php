@@ -5,7 +5,7 @@
 <?
    // 이전화면에서 이름이 입력되지 않았으면 "이름을 입력하세요"
    // 메시지 출력
-   if(!$id) {
+   if(!$_POST[id]) {
      echo("
            <script>
              window.alert('아이디를 입력하세요.')
@@ -15,7 +15,7 @@
          exit;
    }
 
-   if(!$pass) {
+   if(!$_POST[pass]) {
      echo("
            <script>
              window.alert('비밀번호를 입력하세요.')
@@ -27,7 +27,7 @@
 
    include "../lib/dbconn.php";
 
-   $sql = "select * from member where id='$id'";
+   $sql = "select * from member where id='$_POST[id]'";
    $result = mysql_query($sql, $connect);
 
    $num_match = mysql_num_rows($result);
@@ -47,7 +47,7 @@
 
         $db_pass = $row[pass];
 
-        if($pass != $db_pass)
+        if($_POST[pass] != $db_pass)
         {
            echo("
               <script>
@@ -70,7 +70,7 @@
            $_SESSION['usernick'] = $usernick;
            $_SESSION['userlevel'] = $userlevel;
 
-           echo("
+          echo("
               <script>
                 history.go(-2)
               </script>
