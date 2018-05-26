@@ -3,6 +3,7 @@
 	$table = "free";
 	$ripple = "free_ripple";
 	$scale=10;			// 한 화면에 표시되는 글 수
+	$page = $_POST[page];
 
 	include "./lib/dbconn.php";
   $sql = "select * from $table order by num desc";
