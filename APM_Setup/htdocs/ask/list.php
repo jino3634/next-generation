@@ -11,6 +11,8 @@
 <link href="../css/board4.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <?
+
+
 	include "../lib/dbconn.php";
 	$scale=10;			// 한 화면에 표시되는 글 수
 
@@ -30,7 +32,7 @@
 	}
 	else
 	{
-		$sql = "select * from $table order by num desc";
+		$sql = "select * from free where num in (select free_num from redy where student_st_num = '$_SESSION[usernick]');";
 	}
 
 	$result = mysql_query($sql, $connect);
@@ -56,13 +58,19 @@
   </div>  <!-- end of header -->
 	<div id="menu">
 	<? include "../lib/top_menu2.php"; ?>
-  </div>  <!-- end of menu --> 
+  </div>  <!-- end of menu -->
   <div id="content">
 
+<?
+if(!$_SESSION['userid'])// ---------------------------로그인이 안되어 있을시.
+	{
+	echo "<center>로그인 해주세요.</center>";
+	exit;
+	}?>
 
 	<div id="col2">
 		<div id="title">
-			<img src="../img/title_free.gif">
+			<img src="../img/title_ask.gif">
 		</div>
 
 		<form  name="board_form" method="post" action="list.php?table=<?=$table?>&mode=search">

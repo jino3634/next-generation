@@ -18,7 +18,7 @@
     echo "
  	   <script>
       window.alert('참석이 취소 되었습니다.')
-      location.href = '/free/view.php?table=free&num=$num&page=$page';
+      location.href = '/free/view.php?table=free&num=$_GET[num]&page=$_GET[page]';
  	   </script>
  	";
 
