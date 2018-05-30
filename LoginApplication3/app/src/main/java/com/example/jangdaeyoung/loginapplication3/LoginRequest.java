@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LoginRequest extends StringRequest {
-    final static private String URL = "http:/192.168.255.187//login_android.php";
+    final static private String URL = "http://172.30.83.127/login_android.php";
     private Map<String, String> parameters;
 
     public LoginRequest(String id, String pw, Response.Listener<String> listener){

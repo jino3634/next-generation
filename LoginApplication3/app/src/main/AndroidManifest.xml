@@ -13,11 +13,13 @@
             <intent-filter>
                 <action android:name="android.intent.action.LAUNCHER" />
 
-                <category android:name="android.intent.category.MAIN" />
+               <category android:name="android.intent.category.MINA"  />
+
+
             </intent-filter>
+
         </activity>
         <activity android:name=".MainActivity"/>
-
 
     </application>
 </manifest>
