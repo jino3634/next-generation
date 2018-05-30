@@ -12,12 +12,23 @@
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.LAUNCHER" />
+<<<<<<< HEAD
 
                 <category android:name="android.intent.category.MAIN" />
+=======
+
+               <category android:name="android.intent.category.MINA"  />
+
+
+>>>>>>> 99b7daf9b4b817ab1b2a222e9065f2acc0d9c585
             </intent-filter>
+
         </activity>
         <activity android:name=".MainActivity"/>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 99b7daf9b4b817ab1b2a222e9065f2acc0d9c585
     </application>
 </manifest>
