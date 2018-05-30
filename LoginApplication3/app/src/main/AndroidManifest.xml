@@ -14,6 +14,7 @@
                 <action android:name="android.intent.action.LAUNCHER" />
 <<<<<<< HEAD
 
+<<<<<<< HEAD
                 <category android:name="android.intent.category.MAIN" />
 =======
 
@@ -21,14 +22,22 @@
 
 
 >>>>>>> 99b7daf9b4b817ab1b2a222e9065f2acc0d9c585
+=======
+               <category android:name="android.intent.category.MINA"  />
+
+
+>>>>>>> origin/jang
             </intent-filter>
 
         </activity>
         <activity android:name=".MainActivity"/>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 99b7daf9b4b817ab1b2a222e9065f2acc0d9c585
+=======
+>>>>>>> origin/jang
     </application>
 </manifest>
