@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         mArrayList = new ArrayList<>();
 
         GetData task = new GetData();
-        task.execute("http://192.168.85.1/board_android.php");
+        task.execute("http://172.30.1.32/board_android.php");
     }
 
 
