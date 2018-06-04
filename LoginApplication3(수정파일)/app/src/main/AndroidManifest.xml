@@ -11,15 +11,37 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
+<<<<<<< HEAD:LoginApplication3(수정파일)/app/src/main/AndroidManifest.xml
                 <action android:name="android.intent.action.MAIN" />
+=======
+                <action android:name="android.intent.action.LAUNCHER" />
+<<<<<<< HEAD
+
+<<<<<<< HEAD
+                <category android:name="android.intent.category.MAIN" />
+=======
+>>>>>>> 09965b4e1fd28b6ba3dcc54b5ffceb073a797bc3:LoginApplication3/app/src/main/AndroidManifest.xml
 
                <category android:name="android.intent.category.LAUNCHER"  />
 
 
+>>>>>>> 99b7daf9b4b817ab1b2a222e9065f2acc0d9c585
+=======
+               <category android:name="android.intent.category.MINA"  />
+
+
+>>>>>>> origin/jang
             </intent-filter>
 
         </activity>
         <activity android:name=".LoginActivity"/>
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> 99b7daf9b4b817ab1b2a222e9065f2acc0d9c585
+=======
+>>>>>>> origin/jang
     </application>
 </manifest>

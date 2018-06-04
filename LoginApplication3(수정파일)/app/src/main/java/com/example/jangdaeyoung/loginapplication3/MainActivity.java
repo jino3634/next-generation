@@ -53,7 +53,11 @@ public class MainActivity extends AppCompatActivity {
         mArrayList = new ArrayList<>();
 
         GetData task = new GetData();
+<<<<<<< HEAD:LoginApplication3(수정파일)/app/src/main/java/com/example/jangdaeyoung/loginapplication3/MainActivity.java
         task.execute("http://172.30.1.32/board_android.php");
+=======
+        task.execute("http://http://172.30.83.127/board_android.php");
+>>>>>>> 09965b4e1fd28b6ba3dcc54b5ffceb073a797bc3:LoginApplication3/app/src/main/java/com/example/jangdaeyoung/loginapplication3/MainActivity.java
     }
 
 
