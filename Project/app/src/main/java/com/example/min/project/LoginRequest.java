@@ -1,5 +1,7 @@
 package com.example.min.project;
 
+import android.util.Log;
+
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
 
@@ -16,6 +18,7 @@ public class LoginRequest extends StringRequest {
         parameters = new HashMap<>();
         parameters.put("id",id);
         parameters.put("pw",pw);
+        Log.v("태그","넘기기 성공");
     }
     @Override
     public Map<String, String> getParams() {return parameters;}
